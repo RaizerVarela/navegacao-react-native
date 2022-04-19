@@ -18,7 +18,12 @@ export default props => (
           title='Avancar'
           onPress={()=>{
             //props.navigation.navigate(props.avancar) nao adiciona uma tela
-            props.navigation.push(props.avancar) //vai adicionar uma tela
+            props.navigation.push(
+              props.avancar,
+              {
+                numero: parseInt(Math.random() * 100)
+              }
+            ) //vai adicionar uma tela
           }}
         />
         : false
