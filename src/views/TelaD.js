@@ -12,7 +12,6 @@ export default props => {
             props.navigation.openDrawer()
             setTimeout(()=>{
               props.navigation.closeDrawer()
-
             }, 3000)
           }}  
         />
