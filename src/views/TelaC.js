@@ -9,7 +9,7 @@ export default props => {
     ? props.route.params.numero : 0
   return(
     <TextoCentral corFundo='#9932cd'>
-       Tela C - {numero}
+       Tela C - {props.route.params.numero}
     </TextoCentral>
   )
 }
